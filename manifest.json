@@ -1,0 +1,9 @@
+{
+	"matches": [
+	"https://www.bet365.com/*",
+	"https://www.betfred.com/*"
+	],
+	"css": [
+	"css/style.css"
+	]
+}
