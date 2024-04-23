@@ -1,0 +1,70 @@
+{
+  "manifest_version": 3,
+  "name": "Gambling Website Blocker",
+  "version": "1.4.0",
+  "description": "Block access to gambling websites.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.allbritishcasino.com/*",
+        "https://www.betfred.com/*",
+        "https://www.bet365.com/*",
+        "https://www.WilliamHill.com/*",
+        "https://www.betmgm.com/*",
+        "https://www.Betway.com/*",
+        "https://www.10bet.com/*",
+        "https://www.neptuneplay.com/*",
+        "https://www.Fitzdares.com/*",
+        "https://www.mrvegas.com/*",
+        "https://www.pubcasino.co.uk/*",
+        "https://www.playojo.com/*",
+        "https://www.slotsnplay.com/*",
+        "https://www.casinocasino.com/*",
+        "https://www.talksportbet.com/*",
+        "https://www.spinandwin.com/*",
+        "https://www.magicred.com/*",
+        "https://www.666casino.com/*",
+        "https://www.redaxeplay.com/*",
+        "https://www.winomania.co.uk/*",
+        "https://www.funcasino.com/*",
+        "https://www.casushi.com/*",
+        "https://www.greatbritaincasino.com/*",
+        "https://www.betvictor.com/*",
+        "https://www.privewin.com/*",
+        "https://www.playfrank.com/*",
+        "https://www.luckyadmiral.com/*",
+        "https://www.kingcasino.com/*",
+        "https://www.redcasino.com/*",
+        "https://www.jackpotcitycasino.com/*",
+        "https://www.gambling.com/*",
+		"https://www.jackpotcitycasino.co.uk/*"
+      ],
+      "css": [
+        "css/popup.css",
+		"css/style.css"
+      ],
+      "js": [
+        "js/popup.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true,
+      "match_about_blank": true
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+}

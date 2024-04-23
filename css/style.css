@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  color: #fff;
+  font-family: monospace;
+  font-size: 5vw;
+  font-weight: bold;
+  text-align: center;
+}
+html {
+  background: radial-gradient(68.34% 50% at 50% 50%, #2D9AFF 0%, #41DEE8 0%, #8CFF2E 100%);
+  height: 100vh;
+  padding: 50px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html::before {
+  content: 'BLOCKED! For support see the "click here" button in the popup or call free on 0808 8020 133';
+}
+.link {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+body {
+  display: none !important;
+}
